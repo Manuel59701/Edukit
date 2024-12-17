@@ -9,16 +9,18 @@ import Hero4 from "../../assets/Hero4.png";
 import Hero5 from "../../assets/Hero5.png";
 
 const HeroSection = () => {
-  const images = [Hero1, Hero2, Hero3, Hero4, Hero5]; // Array of images
+  const images = [Hero1, Hero2, Hero3, Hero4, Hero5];
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [exitingSlide, setExitingSlide] = useState(null);
 
   useEffect(() => {
     const slideInterval = setInterval(() => {
+      setExitingSlide(currentSlide);
       setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
-    }, 5000); // 5 seconds
+    }, 5000);
 
     return () => clearInterval(slideInterval);
-  }, [images.length]);
+  }, [currentSlide, images.length]);
 
   return (
     <div className="HeroSection">
@@ -28,7 +30,13 @@ const HeroSection = () => {
             key={index}
             src={image}
             alt={`Slide ${index + 1}`}
-            className={`slide ${index === currentSlide ? "active" : ""}`}
+            className={`slide ${
+              index === currentSlide
+                ? "active"
+                : index === exitingSlide
+                ? "exiting"
+                : ""
+            }`}
           />
         ))}
       </div>

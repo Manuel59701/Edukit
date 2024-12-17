@@ -7,6 +7,7 @@
   max-width: 1500px; /* Set a maximum width */
   margin: 0 auto; /* Center the navbar horizontally */
   box-sizing: border-box;
+  background-color: #ffffff;
 }
 
 /* Logo Section */
@@ -68,7 +69,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   list-style: none;
   padding: 10px 0;
@@ -127,7 +128,7 @@
 
 .sign-up {
   background-color: #004aad; /* Blue background */
-  color: #fff;
+  color: #ffffff;
 }
 
 .sign-up:hover {
@@ -144,6 +145,6 @@
 
 .log-in:hover {
   background-color: #535862; /* Grey background on hover */
-  color: #fff;
+  color: #ffffff;
   border-color: #535862;
 }

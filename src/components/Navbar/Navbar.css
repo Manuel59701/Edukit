@@ -1,0 +1,149 @@
+/* Navbar Container */
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  max-width: 1500px; /* Set a maximum width */
+  margin: 0 auto; /* Center the navbar horizontally */
+  box-sizing: border-box;
+}
+
+/* Logo Section */
+.NavLogo img {
+  height: 50px;
+}
+
+/* Navigation Items */
+.NavItems ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.NavItems li {
+  position: relative;
+  margin: 0 15px;
+}
+
+/* Dropdown Button */
+.NavItems button {
+  background: none;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #535862; /* Grey text */
+}
+
+.NavItems button:hover,
+.NavItems a:hover {
+  color: #004aad; /* Blue text on hover */
+}
+
+/* Links without dropdown */
+.NavItems a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #535862; /* Grey text */
+  padding: 5px 10px;
+}
+
+.NavItems a:hover {
+  color: #004aad; /* Blue text on hover */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  z-index: 10;
+  flex-direction: column;
+}
+
+/* Display dropdown menu on hover or when open */
+.dropdown:hover .dropdown-menu,
+.dropdown-menu.open {
+  display: flex;
+}
+
+/* Dropdown Menu Items */
+.dropdown-menu li {
+  padding: 10px 15px;
+}
+
+.dropdown-menu li a {
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #535862; /* Grey text */
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f1f1f1;
+  color: #004aad; /* Blue text on hover */
+}
+
+.NavOthers {
+  margin-top: 5px;
+}
+
+/* Buttons for Sign Up and Log In */
+.NavButtons {
+  display: flex;
+  align-items: center;
+}
+
+.NavButtons button {
+  margin-left: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.sign-up {
+  background-color: #004aad; /* Blue background */
+  color: #fff;
+}
+
+.sign-up:hover {
+  background-color: #f1f1f1ff; /* Darker blue on hover */
+  color: #004aad;
+}
+
+.log-in {
+  background-color: #f1f1f1ff;
+  color: #535862;
+  border: 2px solid #535862; /* Grey border */
+  border-radius: 5px;
+}
+
+.log-in:hover {
+  background-color: #535862; /* Grey background on hover */
+  color: #fff;
+  border-color: #535862;
+}

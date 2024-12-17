@@ -1,0 +1,141 @@
+/* Hero Section Container */
+.HeroSection {
+  width: 100%; /* Make it the same width as the navbar */
+  max-width: 1440px; /* Ensure the width doesn't exceed 1440px */
+  height: 880px; /* Set the height to 880px */
+  margin-top: 2px; /* Gap between navbar and hero section */
+  position: relative;
+  overflow: hidden;
+  margin-left: auto; /* Center the hero section horizontally */
+  margin-right: auto; /* Center the hero section horizontally */
+}
+
+/* Slider Container */
+.HeroSlider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Individual Slide Images */
+.HeroSlider .slide {
+  width: 100%; /* Make the images take up the full width of the container */
+  height: 880px; /* Set the height to 880px */
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Activate the current slide */
+.HeroSlider .slide.active {
+  opacity: 1;
+  z-index: 0;
+}
+
+/* Slide Transition: Move Out to Left, Next Image Enter from Left */
+.HeroSlider .slide {
+  transform: translateX(-100%); /* Start off-screen to the left */
+}
+
+.HeroSlider .slide.active {
+  transform: translateX(0); /* Slide in from the left */
+}
+
+/* Hero Content Section */
+.HeroContent {
+  position: absolute;
+  top: 45%; /* Vertically centered */
+  left: 5%; /* Position towards the left */
+  transform: translateY(-50%);
+  color: white;
+  z-index: 1; /* Ensure text stays above slides */
+  max-width: 400px; /* Adjust width as needed */
+  text-align: left;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Edukit Nigeria Text */
+.hero-subtitle {
+  font-family: Signika;
+  font-size: 30px;
+  font-weight: 500; /* Semi-bold */
+  line-height: 38px;
+  letter-spacing: 1.5px;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  color: #529cff;
+}
+
+/* Main Title */
+.hero-title {
+  font-size: 40px; /* Biggest text */
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  margin: 10px 0;
+  line-height: 1.2;
+  font-family: Signika;
+  font-weight: 600;
+  text-align: left;
+  color: #fff;
+}
+
+/* Small Subtext */
+.hero-small-text {
+  font-size: 15px;
+  font-weight: 350;
+  margin: 10px 0 20px;
+  font-family: Open Sans;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Buttons Section */
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.donation {
+  background-color: #004aad; /* Blue */
+  color: white;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.donation:hover {
+  background-color: #535862; /* Darker grey */
+}
+
+.request {
+  background-color: #fff; /* Blue */
+  color: #004aad;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.request:hover {
+  background-color: #535862;
+  color: #fff;
+}

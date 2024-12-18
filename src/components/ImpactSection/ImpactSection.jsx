@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./ImpactSection.css"; // Assuming you will define your styles in this file
+import "./ImpactSection.css";
 
 const ImpactSection = () => {
   const [impactData, setImpactData] = useState({

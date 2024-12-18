@@ -4,8 +4,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  max-width: 1500px; /* Set a maximum width */
-  margin: 0 auto; /* Center the navbar horizontally */
+  max-width: 1500px;
+  margin: 0 auto;
   box-sizing: border-box;
   background-color: #ffffff;
 }
@@ -39,12 +39,12 @@
   text-align: left;
   cursor: pointer;
   padding: 5px 10px;
-  color: #535862; /* Grey text */
+  color: #535862;
 }
 
 .NavItems button:hover,
 .NavItems a:hover {
-  color: #004aad; /* Blue text on hover */
+  color: #004aad;
 }
 
 /* Links without dropdown */
@@ -55,12 +55,12 @@
   font-weight: 600;
   line-height: 24px;
   text-align: left;
-  color: #535862; /* Grey text */
+  color: #535862;
   padding: 5px 10px;
 }
 
 .NavItems a:hover {
-  color: #004aad; /* Blue text on hover */
+  color: #004aad;
 }
 
 /* Dropdown Menu */
@@ -96,13 +96,13 @@
   font-weight: 600;
   line-height: 24px;
   text-align: left;
-  color: #535862; /* Grey text */
+  color: #535862;
   display: block;
 }
 
 .dropdown-menu li a:hover {
   background-color: #f1f1f1;
-  color: #004aad; /* Blue text on hover */
+  color: #004aad;
 }
 
 .NavOthers {
@@ -127,24 +127,24 @@
 }
 
 .sign-up {
-  background-color: #004aad; /* Blue background */
+  background-color: #004aad;
   color: #ffffff;
 }
 
 .sign-up:hover {
-  background-color: #f1f1f1ff; /* Darker blue on hover */
+  background-color: #f1f1f1ff;
   color: #004aad;
 }
 
 .log-in {
   background-color: #f1f1f1ff;
   color: #535862;
-  border: 2px solid #535862; /* Grey border */
+  border: 2px solid #535862;
   border-radius: 5px;
 }
 
 .log-in:hover {
-  background-color: #535862; /* Grey background on hover */
+  background-color: #535862;
   color: #ffffff;
   border-color: #535862;
 }

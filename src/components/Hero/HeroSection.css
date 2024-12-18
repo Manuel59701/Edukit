@@ -45,22 +45,21 @@
 /* Hero Content Section */
 .HeroContent {
   position: absolute;
-  top: 45%; /* Vertically centered */
+  top: 50%; /* Vertically centered */
   left: 5%; /* Position towards the left */
   transform: translateY(-50%);
   color: white;
   z-index: 3; /* Ensure it stays above the slides */
-  max-width: 400px; /* Adjust width as needed */
+  max-width: 400px;
   text-align: left;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  pointer-events: none; /* Ensures it doesn't interfere with button clicks on slides */
 }
 
 /* Edukit Nigeria Text */
 .hero-subtitle {
   font-family: Signika;
   font-size: 30px;
-  font-weight: 500; /* Semi-bold */
+  font-weight: 500;
   line-height: 38px;
   letter-spacing: 1.5px;
   margin: 0 0 10px;
@@ -69,7 +68,7 @@
 
 /* Main Title */
 .hero-title {
-  font-size: 40px; /* Biggest text */
+  font-size: 40px;
   font-weight: bold;
   letter-spacing: 0.02em;
   margin: 10px 0;
@@ -106,7 +105,7 @@
 }
 
 .donation {
-  background-color: #004aad; /* Blue */
+  background-color: #004aad;
   color: white;
   font-family: Open Sans;
   font-size: 18px;
@@ -118,11 +117,11 @@
 }
 
 .donation:hover {
-  background-color: #535862; /* Darker grey */
+  background-color: #535862;
 }
 
 .request {
-  background-color: #fff; /* Blue */
+  background-color: #fff;
   color: #004aad;
   font-family: Open Sans;
   font-size: 18px;

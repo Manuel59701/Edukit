@@ -4,8 +4,8 @@
   justify-content: space-between;
   padding: 2rem;
   background-color: #f3f7fa;
-  max-width: 1500px; /* Matches the width of the hero section and navbar */
-  margin: 0 auto; /* Centers the section */
+  max-width: 1500px;
+  margin: 0 auto;
   height: 984px;
 }
 
@@ -17,14 +17,14 @@
 .title {
   font-family: Signika;
   font-size: 30px;
-  font-weight: 500; /* Semi-bold */
+  font-weight: 500;
   margin: 0 0 10px;
   color: #004aad;
 }
 
 .head {
   width: 400px;
-  font-size: 40px; /* Biggest text */
+  font-size: 40px;
   font-weight: bold;
   letter-spacing: 0.02em;
   margin: 5px 0;

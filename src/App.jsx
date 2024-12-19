@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/Hero/HeroSection";
 import KeyFeatures from "./components/KeyFeatures/keyfeatures";
 import ImpactSection from "./components/ImpactSection/ImpactSection";
+import TestimonialSection from "./components/TestimonialSection/TestimonialSection";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <HeroSection />
       <KeyFeatures />
       <ImpactSection />
+      <TestimonialSection />
     </div>
   );
 };

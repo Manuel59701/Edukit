@@ -76,6 +76,7 @@
   margin: 0;
   z-index: 10;
   flex-direction: column;
+  text-align: center; /* Center align text in the dropdown */
 }
 
 /* Display dropdown menu on hover or when open */
@@ -87,22 +88,64 @@
 /* Dropdown Menu Items */
 .dropdown-menu li {
   padding: 10px 15px;
+  position: relative;
+  text-align: center; /* Ensure text is centered in each item */
 }
 
-.dropdown-menu li a {
+/* Submenu (Blog submenu inside About Us) */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 15;
+  flex-direction: column;
+  text-align: center; /* Center align text in the submenu */
+}
+
+/* Show submenu when active */
+.dropdown-menu li:hover > .submenu,
+.submenu-active {
+  display: flex;
+}
+
+/* Submenu Items */
+.submenu li {
+  padding: 10px 15px;
+  white-space: nowrap;
+  text-align: center; /* Center align text in submenu items */
+}
+
+.submenu li a {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
-  line-height: 24px;
-  text-align: left;
   color: #535862;
   display: block;
+  text-align: center; /* Center text in the anchor tags */
 }
 
-.dropdown-menu li a:hover {
+.submenu li a:hover {
   background-color: #f1f1f1;
   color: #004aad;
+}
+
+/* Adjust margins for a clean layout */
+.NavItems ul {
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center align the navigation items */
+}
+
+.NavItems li {
+  margin: 0 10px;
+  text-align: center; /* Center align the individual list items */
 }
 
 .NavOthers {
